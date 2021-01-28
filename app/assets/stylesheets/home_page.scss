@@ -30,5 +30,8 @@
 .home-page__post-container {
   border: 2px solid $main-green;
   margin: 0 auto;
-  width: 75%;
+
+  @include min-md {
+    width: 75%;
+  }
 }

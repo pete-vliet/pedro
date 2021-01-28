@@ -1,1 +1,33 @@
+// COLORS
 $main-green: #227300;
+
+// MEDIA QUERY BREAKPOINTS / MIXIN DEFINTIONS
+// https://medium.com/codeartisan/breakpoints-and-media-queries-in-scss-46e8f551e2f2
+$screen-sm-min: 560px; // Small tablets and large smartphones (landscape view)
+$screen-md-min: 768px; // Small tablets (portrait view)
+$screen-lg-min: 992px; // Tablets and small desktops
+$screen-xl-min: 1200px; // Large tablets and desktops
+
+@mixin min-sm {
+   @media (min-width: #{$screen-sm-min}) {
+       @content;
+   }
+}
+
+@mixin min-md {
+   @media (min-width: #{$screen-md-min}) {
+       @content;
+   }
+}
+
+@mixin min-lg {
+   @media (min-width: #{$screen-lg-min}) {
+       @content;
+   }
+}
+
+@mixin min-xl {
+   @media (min-width: #{$screen-xl-min}) {
+       @content;
+   }
+}
