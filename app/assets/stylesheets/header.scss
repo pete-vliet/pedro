@@ -1,0 +1,26 @@
+.site-header__container {
+  // border-bottom: 2px solid black;
+  box-shadow: 0 2px 2px lightgrey;
+  padding: 8px 0;
+}
+
+.site-header__content {
+  display: flex;
+  justify-content: space-between;
+
+  color: $main-green;
+  font-size: 20px;
+  margin: 0 auto;
+  max-width: 80%;
+  padding-top: 2px;
+}
+
+.site-header__link-separator {
+  color: black;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.site-header__links {
+  font-size: 16px;
+}
