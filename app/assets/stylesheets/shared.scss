@@ -1,3 +1,42 @@
+.content-container {
+  border: 2px solid $main-green;
+  margin: 0 auto;
+
+  @include min-md {
+    width: 75%;
+  }
+}
+
+.content-body {
+  line-height: 24px;
+  padding: 20px;
+}
+
+.content-title {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.f--bold {
+  font-weight: bold;
+}
+
+.f--h2 {
+  font-size: 16px;
+}
+
 .f--header {
   font-family: 'Roboto Slab', serif;
+}
+
+.f--italic {
+  font-style: italic;
+}
+
+.m-l--s {
+  margin-left: 12px;
+}
+
+.page__container {
+  padding-top: 20px;
 }

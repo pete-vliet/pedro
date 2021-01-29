@@ -1,8 +1,12 @@
 .site-header__active-link {
   background-color: $main-green;
-  color: white;
   padding: 0 12px 0 8px;
   position: relative;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
 
   &:before {
     content: '';
@@ -56,6 +60,11 @@
 .site-header__link {
   padding: 0 12px 0 8px;
   position: relative;
+
+  a {
+    color: $main-green;
+    text-decoration: none;
+  }
 
   &:hover {
     background-color: $lighter-green;

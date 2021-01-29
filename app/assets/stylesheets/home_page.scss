@@ -1,12 +1,3 @@
-.home-page__container {
-  padding-top: 20px;
-}
-
-.home-page__post-content {
-  line-height: 24px;
-  padding: 20px;
-}
-
 .home-page__post-date-container {
   display: flex;
 }
@@ -26,18 +17,4 @@
     border-left: 11px solid $main-green;
     width: 0;
   }
-}
-
-.home-page__post-container {
-  border: 2px solid $main-green;
-  margin: 0 auto;
-
-  @include min-md {
-    width: 75%;
-  }
-}
-
-.home-page__post-title {
-  font-size: 20px;
-  margin-bottom: 16px;
 }

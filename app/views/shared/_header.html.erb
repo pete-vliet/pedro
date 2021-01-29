@@ -4,9 +4,13 @@
       Peter Vliet
     </div>
     <div class='site-header__links'>
-      <span class='site-header__active-link'>Missives</span>
+      <span class="<%= class_for_current_controller('home_page') %>">
+        <a href='/'>Missives</a>
+      </span>
       <span class='site-header__link-separator'>///</span>
-      <span class='site-header__link'>My Recs</span>
+      <span class="<%= class_for_current_controller('recommendations') %>">
+        <a href='/recs'>My Recs</a>
+      </span>
       <span class='site-header__link-separator'>///</span>
       <span class='site-header__link'>About</span>
       <span class='site-header__link-separator'>///</span>
