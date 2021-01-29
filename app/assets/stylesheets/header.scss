@@ -1,3 +1,20 @@
+.site-header__active-link {
+  background-color: $main-green;
+  color: white;
+  padding: 0 12px 0 8px;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom: 21px solid white;
+    border-left: 7px solid $main-green;
+    width: 0;
+  }
+}
+
 .site-header__container {
   // border-bottom: 2px solid black;
   box-shadow: 0 2px 2px lightgrey;
@@ -25,8 +42,6 @@
 
 .site-header__link-separator {
   color: black;
-  margin-left: 4px;
-  margin-right: 4px;
 }
 
 .site-header__links {
@@ -35,6 +50,26 @@
 
   @include min-md {
     display: block;
+  }
+}
+
+.site-header__link {
+  padding: 0 12px 0 8px;
+  position: relative;
+
+  &:hover {
+    background-color: $lighter-green;
+  }
+
+  &:hover:before {
+    background-color: $lighter-green;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom: 21px solid white;
+    border-left: 7px solid $lighter-green;
+    width: 0;
   }
 }
 
