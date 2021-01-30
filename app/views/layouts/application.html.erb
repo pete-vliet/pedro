@@ -34,8 +34,6 @@
     window.onscroll = function() {determineNavBarStickiness()};
     var navbar = document.getElementById("navbar");
     var sticky = navbar.offsetTop;
-    console.log('hey');
-    console.log(sticky);
     function determineNavBarStickiness() {
       if (window.pageYOffset >= sticky) {
         navbar.classList.add("site-header__sticky");
