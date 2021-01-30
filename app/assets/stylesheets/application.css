@@ -11,13 +11,8 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_self
+ *= require styles
  */
-@import 'reset_default_styles';
-
-@import 'variables';
-@import 'shared';
-@import 'header';
-@import 'home_page';
 
 body {
   font-family: 'Open Sans', sans-serif;

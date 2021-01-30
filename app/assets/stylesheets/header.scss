@@ -1,3 +1,5 @@
+@import 'variables';
+
 .site-header__active-link {
   background-color: $main-green;
   padding: 0 12px 0 8px;
@@ -13,8 +15,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    border-bottom: 21px solid white;
-    border-left: 7px solid $main-green;
+    border-bottom: 23px solid white;
+    border-left: 8px solid $main-green;
     width: 0;
   }
 }
