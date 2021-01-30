@@ -25,8 +25,17 @@
     </div>
   </div>
   <div id="site-header__mobile-menu-links">
-    <div>My Recs</div>
-    <div>About</div>
-    <div>Contact</div>
+    <div class="<%= mobile_class_for_current_controller('home_page') %>">
+      <a href='/'>Missives</a>
+    </div>
+    <div class="<%= mobile_class_for_current_controller('recommendations') %>">
+      <a href='/recs'>My Recs</a>
+    </div>
+    <div class='site-header__mobile-menu-link'>
+      <a href='#'>About</a>
+    </div>
+    <div class='site-header__mobile-menu-link'>
+      <a href='#'>Contact</a>
+    </div>
   </div>
 </div>

@@ -84,6 +84,29 @@
 
 // MOBILE NAVBAR & HAMBURGER MENU
 
+.site-header__active-mobile-menu-link {
+  background-color: $main-green;
+  font-size: 16px;
+  padding: 4px 12px 4px 8px;
+  position: relative;
+  width: 25%;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom: 24px solid white;
+    border-left: 8px solid $main-green;
+    width: 0;
+  }
+}
+
 .site-header__mobile-menu {
   @include min-md {
     display: none;
@@ -91,10 +114,13 @@
 }
 
 .site-header__mobile-menu-link {
-  margin: 12px 0;
+  font-size: 16px;
+  margin: 8px 0;
+  padding: 4px 12px 0 8px;
 
   a {
     text-decoration: none;
+    color: $main-green;
   }
 }
 
