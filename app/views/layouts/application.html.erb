@@ -6,7 +6,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&family=Roboto+Slab&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&family=Roboto+Slab&display=swap" rel="stylesheet">
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -28,6 +28,19 @@
       } else {
         mobileLinksDropdownMenu.style.display = "block";
         mobileLinksDropdownMenu.classList.add("active");
+      }
+    }
+
+    window.onscroll = function() {determineNavBarStickiness()};
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    console.log('hey');
+    console.log(sticky);
+    function determineNavBarStickiness() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("site-header__sticky");
+      } else {
+        navbar.classList.remove("site-header__sticky");
       }
     }
   </script>
